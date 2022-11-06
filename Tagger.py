@@ -31,7 +31,6 @@ async def start(event):
                       [Button.url('SAHİB 👮‍♂️', 'https://t.me/sesizKOLGE')],
                       [Button.url('DİGƏR BOTUM 🤖', 'https://t.me/Kolgempbot')],
 		      [Button.url('OWNER 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
-                      [Button('📚 ƏMRLƏR', callback_data='help')],
 		    ),
                     link_preview=False
                    )
