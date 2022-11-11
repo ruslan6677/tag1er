@@ -29,19 +29,19 @@ async def start(event):
                    
 		      [Button.url('Beni Gruba Ekle ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
                       [Button.url('SAHİB 👮‍♂️', 'https://t.me/sesizKOLGE')],
-                      [Button.url('DİGƏR BOTUM 🤖', 'https://t.me/Kolgempbot')],
+                      [Button.url('DİGƏR BOTUM 🤖', 'https://t.me/menimbotlarim')],
 		      [Button.url('OWNER 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
 		    ),
                     link_preview=False
                    )
 @client.on(events.NewMessage(pattern="^/help$"))
 async def help(event):
-  helptext = "**𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Un Əmrləri **\n\n**/tag <səbəb> - 5-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Yönəticiləri Tək Tək Tağ Edər**\n\n**/start - Botu Başladar\n/reklam - Bot Haqda Qisa Məlumat**"
+  helptext = "**𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Un Əmrləri **\n\n**/tag <səbəb> - 7-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər(7-7)**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Yönəticiləri Tağ Edər(7-7)**\n\n**/start - Botu Başladar\n/reklam - Bot Haqda Qisa Məlumat**"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Beni Gruba Ekle➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
                       [Button.url('SAHİB 👮‍♂️', 'https://t.me/sesizKOLGE')],
-                      [Button.url('DİGƏR BOTUM 🤖', 'https://t.me/Kolgempbot')],
+                      [Button.url('DİGƏR BOTUM 🤖', 'https://t.me/menimbotlarim')],
 		      [Button.url('OWNER 👨‍💻', 'https://t.me/sesizKOLGE')],
                     ),
                     link_preview=False
@@ -49,7 +49,7 @@ async def help(event):
 	
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
-  helptext = "**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Bot Sizə Görə:\n\n📌 5-Li Tağ\n📌 Emoji İlə Tağ\n📌 Təkli Tağ\n📌 Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @kolgetaggerbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz **"
+  helptext = "**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Bot Sizə Görə:\n\n📌 7-Li Tağ\n📌7 Li Emoji İlə Tağ\n📌 Təkli Tağ\n📌 7 Li Tağ.Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @kolgetaggerbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz **"
   await event.reply(helptext,
                     buttons=(
                       [Button.url('Botu Gruba Ekle➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
@@ -169,7 +169,7 @@ async def mentionall(event):
       if event.chat_id not in anlik_calisan:
         await event.respond("✅ Proses Uğurla Durduruldu\n\n**📢 Burda Sizin Reklamınız Ola Bilər\n\n📢 Əlaqə:- @sesizKOLGE**")
         return
-      if usrnum == 5:
+      if usrnum == 7:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
         await asyncio.sleep(2)
         usrnum = 0
@@ -187,7 +187,7 @@ async def mentionall(event):
       if event.chat_id not in anlik_calisan:
         await event.respond("✅ Proses Uğurla Durduruldu")
         return
-      if usrnum == 5:
+      if usrnum == 7:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
         await asyncio.sleep(2)
         usrnum = 0
@@ -279,7 +279,7 @@ async def mentionall(tagadmin):
 	async for i in client.iter_participants(chat, filter=cp):
 		if a_ == 500:
 			break
-		a_+=5
+		a_+=7
 		await tagadmin.client.send_message(tagadmin.chat_id, "**[{}](tg://user?id={}) {}**".format(i.first_name, i.id, seasons))
 		sleep(0.5)
 
