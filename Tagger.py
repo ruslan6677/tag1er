@@ -24,49 +24,49 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑**⚡\n ilə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlırlə Tanış olmaq üçün =======> /help yazın**",
+  await event.reply("**𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑**⚡\n ilə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**",
                     buttons=(
                    
 		      [Button.url('Beni Gruba Ekle ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
-                      [Button.url('SAHİB 👮‍♂️', 'https://t.me/sesizKOLGE')],
                       [Button.url('DİGƏR BOTUM 🤖', 'https://t.me/menimbotlarim')],
 		      [Button.url('OWNER 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
-		    ),
-                    link_preview=False
-                   )
-@client.on(events.NewMessage(pattern="^/help$"))
-async def help(event):
-  helptext = "**𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Un Əmrləri **\n\n**/tag <səbəb> - 7-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Yönəticiləri Tağ Edər(7-7)**\n\n**/start - Botu Başladar\n/reklam - Bot Haqda Qisa Məlumat**"
-  await event.reply(helptext,
-                    buttons=(
-                      [Button.url('Beni Gruba Ekle➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
-                      [Button.url('SAHİB 👮‍♂️', 'https://t.me/sesizKOLGE')],
-                      [Button.url('DİGƏR BOTUM 🤖', 'https://t.me/menimbotlarim')],
-		      [Button.url('OWNER 👨‍💻', 'https://t.me/sesizKOLGE')], 
-                      [Button.inline("emr", data="help")],
+		      [Button.inline("📚 ƏMRLƏR", data="help")],
 		    ),
                     link_preview=False
                    )
 
-	
-	
+@client.on(events.callbackquery.CallbackQuery(data="start"))
+async def handler(event):
+    await evend.edit(f"**𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑**⚡\n ilə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**", 
+                     buttons=(
+                       [Button.url('Beni Gruba Ekle ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
+                       [Button.url('DİGƏR BOTUM 🤖', 'https://t.me/menimbotlarim')],
+		       [Button.url('OWNER 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
+                       [Button.inline("📚 ƏMRLƏR", data="help")],  
+		     ),
+                     link_preview=False
+                    )  
+			     
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):
-    await event.edit(f"ahaaaaa", buttons=(
+    await event.edit(f"𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Un Əmrləri **\n\n**/tag <səbəb> - 7-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Yönəticiləri Tağ Edər(7-7)**\n\n**/start - Botu Başladar\n/reklam - Bot Haqda Qisa Məlumat", buttons=(
                       [
-                      Button.inline("◀️ Geri", data="start")
+                      Button.inline("🗑 Geri", data="start")
                       ]
                     ),
                     link_preview=False)
 
 
-@client.on(events.NewMessage(pattern="^/reklam$"))
-async def help(event):
-  helptext = "**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Bot Sizə Görə:\n\n📌 7-Li Tağ\n📌 7 Li Emoji İlə Tağ\n📌 Təkli Tağ\n📌 Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @kolgetaggerbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz **"
-  await event.reply(helptext,
-                    buttons=(
-                      [Button.url('Botu Gruba Ekle➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
-                    ),
+@client.on(events.callbackquery.CallbackQuery(data="info"))
+async def handler(event):
+    await event.edit(f"**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Bot Sizə Görə:\n\n📌 7-Li Tağ\n📌 7 Li Emoji İlə Tağ\n📌 Təkli Tağ\n📌 Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @kolgetaggerbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz**", buttons=(
+                      [
+			      
+	              [Button.url('➕ Botu Qruba Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
+                      [Button.url('🇦🇿  OWNER 👨‍💻', 'https://t.me/sesizKOLGE')],
+		      [Button.url('🤖 Digər Botlarım', 'https://t.me/menimbotlarim')],
+		      [Button.inline("🗑 Geri", data="start")],
+		    ),
                     link_preview=False
                    )
 	
