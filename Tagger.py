@@ -42,9 +42,9 @@ async def handler(event):
                        Button.inline("✍ Əmrlər", data="help")
                       ],
                       [Button.url('🌱 Məni Qrupa Əlavə Et', f'https://t.me/jwjej3j?startgroup=a')],
-                     [Button.url('📣 Söhbət Qrupu', f'https://t.me/mwkwj2j')],
+                      [Button.url('📣 Söhbət Qrupu', f'https://t.me/mwkwj2j')],
                       [Button.url('📣 Kanal', f'https://t.me/sjeuebej')],
-                       [Button.url('👨🏻‍💻 Sahib', f'https://t.me/sesizKOLGE')]
+                      [Button.url('👨🏻‍💻 Sahib', f'https://t.me/sesizKOLGE')]
                     ),
                     link_preview=False)
 
