@@ -22,7 +22,7 @@ tekli_calisan = []
 
 
 
-@client.on(events.NewMessage(pattern="^!start$"))
+@client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
   await event.reply("**𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑**⚡\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**",
                     buttons=(
@@ -49,7 +49,7 @@ async def handler(event):
 			     
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):
-    await event.edit(f"𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Un Əmrləri **\n\n**/tag <səbəb> - 7-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/btag <səbəb> - Bayraqlarla Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Yönəticiləri Tağ Edər**\n**/cancel - Tağ Prosesin Saxlayar\n\n**/start - Botu Başladar", buttons=(
+    await event.edit(f"𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Un Əmrləri **\n\n**/tag <səbəb> - 7-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/btag <səbəb> - Bayraqlarla Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Yönəticiləri Tağ Edər**\n\n**/cancel - Tağ Prosesin Saxlayar\n\n**/start - Botu Başladar**", buttons=(
                       [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
 	              [Button.inline("ℹ İNFO", data="info")],
                       [Button.inline("🗑 Bağla", data="start")],
@@ -61,7 +61,7 @@ async def handler(event):
 async def handler(event):
     await event.edit(f"**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Bot Sizə Görə:\n\n📌 7-Li Tağ\n📌 Emojilərlə Tağ Edər\n📌 Bayraqlarla Tağ Edər\n📌 Təkli Tağ\n📌 Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @kolgetaggerbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz**", buttons=(      
 	              [Button.url('➕ Botu Qruba Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
-		      [Button.inline("🗑 Geri", data="help")],
+		      [Button.inline("🗑 Bağla", data="start")],
 		    ),
                     link_preview=False)
                    
