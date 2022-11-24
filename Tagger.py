@@ -30,7 +30,7 @@ async def start(event):
 		      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
                       [Button.url('🤖 DİGƏR BOTLARIM', 'https://t.me/menimbotlarim')],
 		      [Button.url('🇦🇿 OWNER 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
-		      [Button.inline("📚 ƏMRLƏR", data="help")],
+		      [Button.inline("📚 ƏMRLƏR", data="info")],
 		    ),
                     link_preview=False
                    )
