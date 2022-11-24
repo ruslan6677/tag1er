@@ -42,11 +42,24 @@ async def help(event):
                       [Button.url('Beni Gruba Ekle➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
                       [Button.url('SAHİB 👮‍♂️', 'https://t.me/sesizKOLGE')],
                       [Button.url('DİGƏR BOTUM 🤖', 'https://t.me/menimbotlarim')],
-		      [Button.url('OWNER 👨‍💻', 'https://t.me/sesizKOLGE')],
-                    ),
+		      [Button.url('OWNER 👨‍💻', 'https://t.me/sesizKOLGE')], 
+                      [Button.inline("emr", data="help")],
+		    ),
                     link_preview=False
                    )
+
 	
+	
+@client.on(events.callbackquery.CallbackQuery(data="help"))
+async def handler(event):
+    await event.edit(f"ahaaaaa", buttons=(
+                      [
+                      Button.inline("◀️ Geri", data="start")
+                      ]
+                    ),
+                    link_preview=False)
+
+
 @client.on(events.NewMessage(pattern="^/reklam$"))
 async def help(event):
   helptext = "**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Bot Sizə Görə:\n\n📌 7-Li Tağ\n📌 7 Li Emoji İlə Tağ\n📌 Təkli Tağ\n📌 Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @kolgetaggerbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz **"
