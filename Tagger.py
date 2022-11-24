@@ -30,7 +30,7 @@ async def start(event):
 		      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
                       [Button.url('🤖 DİGƏR BOTLARIM', 'https://t.me/menimbotlarim')],
 		      [Button.url('🇦🇿 OWNER 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
-		      [Button.inline("📚 ƏMRLƏR", data="info")],
+		      [Button.inline("📚 ƏMRLƏR", data="help")],
 		    ),
                     link_preview=False
                    )
@@ -39,7 +39,7 @@ async def start(event):
 async def handler(event):
     await event.edit(f"**𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑**⚡\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**", buttons=(
                       
-                      [Button.url('➕ Botu Qrupa Al ➕', ' https://t.me/kolgetaggerbot?startgroup=a')],
+                      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
                       [Button.url('🤖 DİGƏR BOTLARIM', f'https://t.me/menimbotlarim')],
                       [Button.url('🇦🇿 OWNER 👨‍💻', f'https://t.me/sesizKOLGE')],
                       [Button.inline("📚 ƏMRLƏR", data="help")],
@@ -50,7 +50,7 @@ async def handler(event):
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):
     await event.edit(f"𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Un Əmrləri **\n\n**/tag <səbəb> - 7-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/btag <səbəb> - Bayraqlarla Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Yönəticiləri Tağ Edər(7-7)**\n\n**/start - Botu Başladar\n/reklam - Bot Haqda Qisa Məlumat", buttons=(
-                      [Button.url('➕ Botu Qrupa Al ➕', ' https://t.me/kolgetaggerbot?startgroup=a')],
+                      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
 	              [Button.inline("ℹ İNFO", data="info")],
                       [Button.inline("🗑 Geri", data="start")],
                     ),
