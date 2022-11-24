@@ -43,7 +43,6 @@ async def handler(event):
                       [Button.url('🤖 DİGƏR BOTLARIM', f'https://t.me/menimbotlarim')],
                       [Button.url('🇦🇿 OWNER 👨‍💻', f'https://t.me/sesizKOLGE')],
                       [Button.inline("📚 ƏMRLƏR", data="help")],
-                      
                     ),
                     link_preview=False)
 
@@ -54,7 +53,6 @@ async def handler(event):
                       [Button.url('➕ Botu Qrupa Al ➕', ' https://t.me/kolgetaggerbot?startgroup=a')],
 	              [Button.inline("ℹ İNFO", data="info")],
                       [Button.inline("🗑 Geri", data="start")],
-                      
                     ),
                     link_preview=False)
 
