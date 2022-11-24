@@ -69,8 +69,8 @@ async def handler(event):
 		      [Button.url('🤖 Digər Botlarım', 'https://t.me/menimbotlarim')],
 		      [Button.inline("🗑 Geri", data="start")],
 		    ),
-                    link_preview=False
-                   )
+                    link_preview=False)
+                   
 	
 	
 
