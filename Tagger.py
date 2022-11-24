@@ -37,15 +37,17 @@ async def start(event):
 
 @client.on(events.callbackquery.CallbackQuery(data="start"))
 async def handler(event):
-    await evend.edit(f"**𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑**⚡\n ilə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**", 
-                     buttons=(
-                       [Button.url('Beni Gruba Ekle ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
-                       [Button.url('DİGƏR BOTUM 🤖', 'https://t.me/menimbotlarim')],
-		       [Button.url('OWNER 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
-                       [Button.inline("📚 ƏMRLƏR", data="help")],  
-		     ),
-                     link_preview=False
-                    )  
+    await event.edit(f" skske alü", buttons=(
+                      [
+                       Button.inline("✍ Əmrlər", data="help")
+                      ],
+                      [Button.url('🌱 Məni Qrupa Əlavə Et', f'https://t.me/jwjej3j?startgroup=a')],
+                     [Button.url('📣 Söhbət Qrupu', f'https://t.me/mwkwj2j')],
+                      [Button.url('📣 Kanal', f'https://t.me/sjeuebej')],
+                       [Button.url('👨🏻‍💻 Sahib', f'https://t.me/sesizKOLGE')]
+                    ),
+                    link_preview=False)
+
 			     
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):
