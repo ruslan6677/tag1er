@@ -24,10 +24,10 @@ tekli_calisan = []
 
 @client.on(events.NewMessage(pattern="^/start$"))
 async def start(event):
-  await event.reply("**𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑**⚡\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**",
+  await event.reply("**⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**",
                     buttons=(
                    
-		      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
+		      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/Flashtaggerbot?startgroup=a')],
                       [Button.url('🤖 DİGƏR BOTLARIM', 'https://t.me/menimbotlarim')],
 		      [Button.url('🇦🇿 OWNER 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
 		      [Button.inline("📚 ƏMRLƏR", data="help")],
@@ -37,9 +37,9 @@ async def start(event):
 
 @client.on(events.callbackquery.CallbackQuery(data="start"))
 async def handler(event):
-    await event.edit(f"**𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑**⚡\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**", buttons=(
+    await event.edit(f"**⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ\n**İlə Qrupunuzdakı Üyələri Etiket Edə Bilərəm\nƏmrlərlə Tanış Olmaq Üçün __ƏMRLƏR__ Butonuna Toxun**", buttons=(
                       
-                      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
+                      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/Flashtaggerbot?startgroup=a')],
                       [Button.url('🤖 DİGƏR BOTLARIM', f'https://t.me/menimbotlarim')],
                       [Button.url('🇦🇿 OWNER 👨‍💻', f'https://t.me/sesizKOLGE')],
                       [Button.inline("📚 ƏMRLƏR", data="help")],
@@ -49,7 +49,7 @@ async def handler(event):
 			     
 @client.on(events.callbackquery.CallbackQuery(data="help"))
 async def handler(event):
-    await event.edit(f"𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Un Əmrləri **\n\n**/tag <səbəb> - 7-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/btag <səbəb> - Bayraqlarla Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Yönəticiləri Tağ Edər**\n\n**/cancel - Tağ Prosesin Saxlayar\n\n**/start - Botu Başladar**", buttons=(
+    await event.edit(f"⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ  Un Əmrləri **\n\n**/tag <səbəb> - 7-li Tağ Edər**\n\n**/etag <səbəb> - Emoji İlə Tağ Edər**\n\n**/btag <səbəb> - Bayraqlarla Tağ Edər**\n\n**/tektag <səbəb> - Tək Teək Tağ Edər**\n\n**/admins <səbəb> - Yönəticiləri Tağ Edər**\n\n**/cancel - Tağ Prosesin Saxlayar\n\n**/start - Botu Başladar**", buttons=(
                       [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
 	              [Button.inline("ℹ İNFO", data="info")],
                       [Button.inline("🗑 Bağla", data="start")],
@@ -59,7 +59,7 @@ async def handler(event):
 
 @client.on(events.callbackquery.CallbackQuery(data="info"))
 async def handler(event):
-    await event.edit(f"**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  𝐊 𝐎 𝐋 𝐆 Ə_𝐓 𝐀 𝐆 𝐆 𝐄 𝐑  Bot Sizə Görə:\n\n📌 7-Li Tağ\n📌 Emojilərlə Tağ Edər\n📌 Bayraqlarla Tağ Edər\n📌 Təkli Tağ\n📌 Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @kolgetaggerbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz**", buttons=(      
+    await event.edit(f"**Çox Özəllikli Tağ Botu Axtarmağa Çalışan Qrub Sahibləri  ⚡ ғ ʟ ᴀ s ʜ _ ᴛ ᴀ ɢ ɢ ᴇ ʀ  Bot Sizə Görə:\n\n📌 7-Li Tağ\n📌 Emojilərlə Tağ Edər\n📌 Bayraqlarla Tağ Edər\n📌 Təkli Tağ\n📌 Yalnız Admimləri Tağ\n\n\nBelə Çox Özəllikli @Flashtaggerbot 'u Qrupunuza Yönətici Olaraq Alıb Rahatlıqla , Tağ edə bilirsiz**", buttons=(      
 	              [Button.url('➕ Botu Qruba Al ➕', 'https://t.me/kolgetaggerbot?startgroup=a')],
 		      [Button.inline("🗑 Bağla", data="start")],
 		    ),
