@@ -240,7 +240,7 @@ mafia = "👨‍🌾Vətəndaş 👨‍✈️Komissar Kattani 👨‍💼Çavuş
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"[{random.choice(mafia)}](tg://user?id={usr.id}) - "
+      usrtxt += f"➢ [{random.choice(mafia)}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
         await event.respond("**✅ Tağ Prosesi Uğurla Durduruldu**")
         return
@@ -258,7 +258,7 @@ mafia = "👨‍🌾Vətəndaş 👨‍✈️Komissar Kattani 👨‍💼Çavuş
     usrtxt = ""
     async for usr in client.iter_participants(event.chat_id):
       usrnum += 1
-      usrtxt += f"[{random.choice(mafia)}](tg://user?id={usr.id}) - "
+      usrtxt += f"➢ [{random.choice(mafia)}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
         await event.respond("✅ Proses Uğurla Durduruldu\n\n**📢 Burda Sizin Reklamınız Ola Bilər\n☎️ Əlaqə:- @sesizKOLGE**")
         return
