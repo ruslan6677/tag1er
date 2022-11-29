@@ -31,7 +31,7 @@ async def start(event):
 		      [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/Flashtaggerbot?startgroup=a')],
                       [Button.url('🤖 DİGƏR BOTLARIM', 'https://t.me/menimbotlarim')],
 		      [Button.url('🇦🇿 OWNER 👨🏻‍💻', 'https://t.me/sesizKOLGE')],
-		      [Button.inline("📚 ƏMRLƏR", data="help")],
+		      [Button.inline("⚙ ƏMRLƏR", data="help")],
 		    ),
                     link_preview=False
                    )
@@ -43,7 +43,7 @@ async def handler(event):
                       [Button.url('➕ Botu Qrupa Al ➕', 'https://t.me/Flashtaggerbot?startgroup=a')],
                       [Button.url('🤖 DİGƏR BOTLARIM', f'https://t.me/menimbotlarim')],
                       [Button.url('🇦🇿 OWNER 👨‍💻', f'https://t.me/sesizKOLGE')],
-                      [Button.inline("📚 ƏMRLƏR", data="help")],
+                      [Button.inline("⚙ ƏMRLƏR", data="help")],
                     ),
                     link_preview=False)
 
